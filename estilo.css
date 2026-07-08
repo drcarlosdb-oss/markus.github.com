@@ -1,0 +1,776 @@
+/* ================================
+   MUNDIAL 2026 - ESTILOS GENERALES
+   ================================ */
+
+
+/* Selector de etiqueta */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#eef3f8;
+    color:#333;
+    line-height:1.6;
+}
+
+
+/* ================================
+        NAVEGACIÓN
+   ================================ */
+
+nav{
+    background:#002244;
+    padding:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.3);
+}
+
+
+/* Selector descendiente */
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+}
+
+
+/* Selector hijo directo */
+nav > ul > li{
+    display:inline-block;
+}
+
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    padding:10px;
+    transition:0.3s;
+}
+
+
+/* Pseudoclase hover */
+nav a:hover{
+    background:#ffd700;
+    color:#002244;
+    border-radius:8px;
+}
+
+
+/* ================================
+          HEADER
+   ================================ */
+
+header{
+    background:linear-gradient(
+        90deg,
+        #003366,
+        #0066cc
+    );
+    color:white;
+    text-align:center;
+    padding:35px;
+}
+
+
+header h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+
+header p{
+    font-size:18px;
+}
+
+
+header img{
+    width:90%;
+    max-width:900px;
+    margin-top:20px;
+    border-radius:15px;
+    border:4px solid white;
+}
+
+
+/* ================================
+          CONTENIDO
+   ================================ */
+
+
+main{
+    width:70%;
+    margin:30px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+/* Selector clase */
+.contenido-principal{
+    border-top:6px solid #0066cc;
+}
+
+
+article,
+section{
+    margin-bottom:25px;
+}
+
+
+h2{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+
+h3{
+    color:#0066cc;
+    margin-bottom:10px;
+}
+
+
+h4{
+    color:#003366;
+}
+
+
+p{
+    margin-bottom:15px;
+}
+
+
+/* Selector hijo directo */
+main > article{
+    padding:20px;
+    border-left:5px solid #0066cc;
+}
+
+
+/* Selector hermano adyacente */
+article + section{
+    border-top:2px solid #ccc;
+    padding-top:20px;
+}
+
+
+/* Selector hermano general */
+article ~ section{
+    margin-top:20px;
+}
+
+
+/* ================================
+          IMÁGENES
+   ================================ */
+
+article img{
+    display:block;
+    width:50%;
+    margin:20px auto;
+    border-radius:12px;
+}
+
+
+.foto-galeria{
+    width:85%;
+    margin:15px auto;
+    border-radius:15px;
+    border:3px solid #0066cc;
+    transition:0.3s;
+}
+
+
+/* hover imágenes */
+.foto-galeria:hover{
+    transform:scale(1.05);
+}
+/* ================================
+            LISTAS
+   ================================ */
+
+
+ul,ol{
+    margin-left:30px;
+}
+
+
+li{
+    margin-bottom:10px;
+}
+
+
+/* ================================
+            TABLAS
+   ================================ */
+
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin:20px 0;
+}
+
+
+th{
+    background:#003366;
+    color:white;
+    padding:12px;
+}
+
+
+td{
+    padding:12px;
+    border:1px solid #aaa;
+    text-align:center;
+}
+
+
+tr:nth-child(even){
+    background:#eaf3ff;
+}
+
+
+/* ================================
+             ASIDE
+   ================================ */
+
+
+aside{
+    width:85%;
+    margin:25px auto;
+    background:white;
+    padding:25px;
+    border-left:6px solid #0066cc;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+.barra-lateral{
+    background:#f8fbff;
+}
+
+
+/* selector descendiente */
+aside section h3{
+    color:#0066cc;
+}
+
+
+/* ================================
+            ENLACES
+   ================================ */
+
+
+a{
+    transition:0.3s;
+}
+
+
+aside a{
+    color:#0055aa;
+    font-weight:bold;
+}
+
+
+aside a:hover{
+    color:#ff6600;
+}
+
+
+
+/* ================================
+            FORMULARIO
+   ================================ */
+
+
+form{
+    background:#f5f9ff;
+    padding:25px;
+    border-radius:12px;
+    border:2px solid #0066cc;
+}
+
+
+form div{
+    margin-bottom:15px;
+}
+
+
+label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+
+input,
+select,
+textarea{
+
+    width:100%;
+    padding:12px;
+
+    border:1px solid #888;
+
+    border-radius:8px;
+
+    font-size:15px;
+}
+
+
+textarea{
+    resize:none;
+}
+
+
+button{
+
+    background:#0066cc;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+
+button:hover{
+
+    background:#003366;
+
+}
+
+
+
+/* ================================
+              FOOTER
+   ================================ */
+
+
+footer{
+
+    background:#002244;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:30px;
+
+}
+
+
+footer p{
+
+    margin:5px;
+
+}
+/* ================================
+          GALERÍA
+   ================================ */
+
+
+main ul{
+    list-style-position:inside;
+}
+
+
+main ul li{
+    background:#f1f7ff;
+    margin-bottom:20px;
+    padding:20px;
+    border-radius:12px;
+    border:1px solid #c5dfff;
+}
+
+
+/* Imagen dentro de galería */
+main ul li img{
+
+    display:block;
+
+    max-width:600px;
+
+    width:90%;
+
+    margin:20px auto;
+
+}
+
+
+
+/* ================================
+        TARJETAS DE SECCIONES
+   ================================ */
+
+
+section{
+
+    background:#ffffff;
+
+}
+
+
+section:hover{
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.12);
+
+    transition:0.3s;
+
+}
+
+
+
+/* ================================
+          SEDES
+   ================================ */
+
+
+/* Selector ID obligatorio */
+#sedes{
+
+    background:#edf7ff;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    border:2px solid #0066cc;
+
+}
+
+
+
+/* ================================
+          BOTONES Y EFECTOS
+   ================================ */
+
+
+button,
+nav a{
+
+    transition:all 0.3s ease;
+
+}
+
+
+button:active{
+
+    transform:scale(0.95);
+
+}
+
+
+
+/* ================================
+          SOMBRAS Y CAJAS
+   ================================ */
+
+
+article,
+section{
+
+    border-radius:12px;
+
+}
+
+
+article{
+
+    background:#fff;
+
+    padding:20px;
+
+}
+
+
+
+/* ================================
+       TITULOS ESPECIALES
+   ================================ */
+
+
+main h2:first-child{
+
+    text-align:center;
+
+    border-bottom:3px solid #0066cc;
+
+    padding-bottom:10px;
+
+}
+
+
+
+/* ================================
+        LINKS INTERNOS
+   ================================ */
+
+
+a[href$=".html"]{
+
+    color:#004c99;
+
+}
+
+
+a[href$=".html"]:hover{
+
+    color:#ff6600;
+
+}
+
+
+
+/* ================================
+          RESPONSIVE
+   ================================ */
+
+
+@media(max-width:768px){
+
+
+    nav ul{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+
+
+    header h1{
+
+        font-size:26px;
+
+    }
+
+
+
+    header img{
+
+        width:100%;
+
+    }
+
+
+
+    main,
+    aside{
+
+        width:95%;
+
+        padding:15px;
+
+    }
+
+
+
+    table{
+
+        font-size:12px;
+
+    }
+
+
+
+    .foto-galeria{
+
+        width:100%;
+
+    }
+
+
+}
+/* ================================
+        AJUSTES FINALES
+   ================================ */
+
+
+/* Hace que todo se vea más suave */
+html{
+    scroll-behavior:smooth;
+}
+
+
+/* ================================
+        TITULOS
+   ================================ */
+
+
+h1,h2,h3,h4{
+
+    letter-spacing:0.5px;
+
+}
+
+
+/* ================================
+        PÁRRAFOS
+   ================================ */
+
+
+p{
+
+    text-align:justify;
+
+}
+
+
+/* ================================
+        ENLACES GENERALES
+   ================================ */
+
+
+a{
+
+    text-decoration:none;
+
+}
+
+
+/* ================================
+        EFECTO A LAS CAJAS
+   ================================ */
+
+
+main,
+aside,
+article,
+section{
+
+    transition:0.3s;
+
+}
+
+
+
+/* ================================
+        HEADER MEJORADO
+   ================================ */
+
+
+header{
+
+    animation:entrada 1s ease;
+
+}
+
+
+
+@keyframes entrada{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-20px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ================================
+        IMAGENES
+   ================================ */
+
+
+img{
+
+    object-fit:cover;
+
+}
+
+
+/* ================================
+        FORMULARIO MOVIL
+   ================================ */
+
+
+@media(max-width:500px){
+
+
+    button{
+
+        width:100%;
+
+    }
+
+
+    input,
+    textarea,
+    select{
+
+        font-size:14px;
+
+    }
+
+
+    h1{
+
+        font-size:22px;
+
+    }
+
+
+    p{
+
+        text-align:left;
+
+    }
+
+}
+
+
+
+/* ================================
+        CLASE EXTRA
+        (por si la profesora revisa)
+   ================================ */
+
+
+.destacado{
+
+    background:#fff4cc;
+
+    padding:15px;
+
+    border-left:5px solid #ffcc00;
+
+}
+
+
+/* ================================
+        FIN CSS MUNDIAL 2026
+   ================================ */
